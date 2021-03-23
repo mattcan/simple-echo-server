@@ -3,6 +3,6 @@ version: "1"
 services:
   - name: simple-echo-server:0.1.0
     description: Returns whatever you put into it
-    run: node /ops/index.js
+    run: node index.js
     port: [ '8080:8080' ]
     domain: "echo.weareallpoatatoes.com"
