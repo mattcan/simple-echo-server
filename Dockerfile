@@ -9,4 +9,3 @@ ADD package.json .
 RUN npm install
 
 ADD . .
-RUN chown -R ops:9999 /ops /home/ops

@@ -6,3 +6,9 @@ services:
     run: node index.js
     port: [ '8080:8080' ]
     domain: "echo.weareallpoatatoes.com"
+    events:
+     - "github:mattcan/simple-echo-server:push:ref==main"
+    trigger:
+     - build
+     - publish
+     - start
