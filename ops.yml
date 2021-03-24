@@ -8,6 +8,7 @@ services:
     domain: "echo.weareallpoatatoes.com"
     events:
      - "github:mattcan/simple-echo-server:push:ref==main"
+     - "github:mattcan/simple-echo-server:push:ref==staging"
     trigger:
      - build
      - publish
