@@ -5,7 +5,7 @@ services:
     description: Returns whatever you put into it
     run: node index.js
     port: [ '8080:8080' ]
-    domain: "echo.weareallpoatatoes.com"
+    domain: "echo.weareallpotatoes.com"
     events:
      - "github:mattcan/simple-echo-server:push:ref==main"
     trigger:
