@@ -9,6 +9,7 @@ async function main() {
     })
 
     request.on('end', function() {
+      sdk.log('responding')
       response.writeHead(200, request.headers)
       response.write(body)
       response.end()
