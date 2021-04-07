@@ -34,8 +34,8 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            gchr.io/mattcan/simple-echo-server:latest
-            gchr.io/mattcan/simple-echo-server:${{ github.sha }}
+            ghcr.io/mattcan/simple-echo-server:latest
+            ghcr.io/mattcan/simple-echo-server:${{ github.sha }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
