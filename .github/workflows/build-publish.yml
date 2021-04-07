@@ -31,7 +31,7 @@ jobs:
           push: true
           tags: |
             gchr.io/mattcan/simple-echo-server:latest
-            gchr.io/mattcan/simple-echo-server:${{ GITHUB_SHA }}
+            gchr.io/mattcan/simple-echo-server:${{ secrets.GITHUB_SHA }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
