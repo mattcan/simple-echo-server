@@ -17,5 +17,6 @@ spec:
         -
           image: docker.io/matthewctoai/simple-echo-server:latest
           name: simple-echo-server
+          command: ["node", "index.js"]
           ports:
             - containerPort: 8080
