@@ -14,7 +14,8 @@ spec:
         app: simple-echo-server
     spec:
       containers:
-        - image: docker.io/matthewctoai/simple-echo-server:latest
-        name: simple-echo-server
-        ports:
-        - containerPort: 8080
+        -
+          image: docker.io/matthewctoai/simple-echo-server:latest
+          name: simple-echo-server
+          ports:
+            - containerPort: 8080
